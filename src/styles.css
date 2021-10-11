@@ -1,3 +1,11 @@
+/**
+ * -- Whiteboard --
+ * 1/ Fix the display of main pic
+ * 2/ Place main pic horizontally next to main content
+ * 3/ Ensure the main pic doesn't get squashed
+ * 4/ Main pic is too heavy, how can you reduce its weight?
+ */
+
 .App {
   font-family: sans-serif;
   text-align: center;
