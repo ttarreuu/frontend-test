@@ -3,14 +3,14 @@
 Hello and thanks for trying out with us!
 
 You will find here a few tests. These are composed of some basic yet bit challenging problems we've had to solve on the job.
-This will also allow you to have a glimpse of what we work on at 99.co and see if that's interesting to you.
+This will also allow you to have a glimpse of what we work on at 99 GROUP and see if that's interesting to you.
 Finally, this'll provide us with insights on your working style.
 
 ## Submission
 
 You have 2 days to complete the challenge. Though realistically, this shouldn't take you more than 4 hours.
 
-Please fork this and once you complete, send us back the forked link to harsha@99.co, co@99.co, benedict.bisana@99.co & alexandre.biediger@99.co
+Please fork this and once you complete, send us back the forked link to ilmiyantif@99.co, priyandiono@99.co, zulnabil@99.co, alexandre.biediger@99.co, choonhoong@99.co.
 
 ## Questions
 
