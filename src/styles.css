@@ -1,11 +1,335 @@
+@font-face {
+  font-family: "avenir-regular";
+  src:
+    local("avenir-regular"),
+    url(../public/avenir-regular.woff2) format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "avenir-medium";
+  src:
+    local("avenir-medium"),
+    url(../public/avenir-medium.woff2) format("woff2");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "avenir-demibold";
+  src:
+    local("avenir-demibold"),
+    url(../public/avenir-demibold.woff2) format("woff2");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "avenir-bold";
+  src:
+    local("avenir-bold"),
+    url(../public/avenir-bold.woff2) format("woff2");
+  font-weight: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  font-size: 10px;
+  margin: 50px auto 50px auto;
+  width: 500px;
+  height: auto;
+}
+
 .App {
-  font-family: sans-serif;
-  text-align: center;
-  border: 1px solid black;
+  display: block;
+  box-shadow: 0px 0px 15px -5px;
+  border-radius: 5px;
+  position: relative;
+}
+
+#root
+  > div
+  > div.hero-slider
+  > div
+  > div.hero-slider-next.index-module_Next__sFCHR.index-module_Wrapper__ZIVLd.index-module_Horizontal__8-P70
+  > div
+  > button
+  > svg {
+  width: 30px;
+  height: 30px;
+}
+
+#root
+  > div
+  > div.hero-slider
+  > div
+  > div.hero-slider-previous.index-module_Previous__TaJVT.index-module_Wrapper__ZIVLd.index-module_Horizontal__8-P70
+  > div
+  > button
+  > svg {
+  width: 30px;
+  height: 30px;
+}
+
+.ribbon {
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  font-family: "font-demibold", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: white;
+  font-size: 1.25em;
+}
+
+.App i {
+  position: absolute;
+  top: 10px;
+  left: -10px;
+  width: 155px;
+  height: 25px;
+  background: #ff72b6;
+  border-top-left-radius: 10px;
+}
+
+.App i::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  width: 10px;
+  height: 15px;
+  background-color: #ce367f;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  z-index: 2;
+}
+
+.App i::after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  width: 10px;
+  height: 10px;
+  background: #ff72b6;
 }
 
 .mainPic {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: inherit 0px inherit 0px;
 }
 
 .mainContent {
+  display: inline-grid;
+  grid-template-columns: auto 0.5fr 5fr;
+  margin: 20px;
+}
+
+.icon {
+  grid-column: 1/2;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  justify-content: center;
+  border: none;
+  background: url(/building-icon.svg) no-repeat;
+}
+
+.container-1 {
+  grid-column: 2/3;
+  margin-left: 10px;
+  width: max-content;
+  position: relative;
+}
+
+h1 {
+  font-family: "font-demibold", sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+  color: #1a2258;
+}
+
+.address {
+  font-family: "font-regular", sans-serif;
+  font-size: 1.25em;
+  color: #787d9c;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.container-2 {
+  grid-column: 3/4;
+  text-align: right;
+}
+
+.price {
+  font-family: "font-demibold", sans-serif;
+  font-size: 1.5em;
+  color: #1a2258;
+  font-weight: 600;
+}
+
+.subprice {
+  font-family: "font-regular", sans-serif;
+  font-size: 1.25em;
+  color: #787d9c;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.container-3 {
+  grid-column: 1/4;
+  margin: 10px 0px 10px 0px;
+}
+
+.info-1 {
+  font-family: "font-regular", sans-serif;
+  font-size: 1.5em;
+  color: #1a2258;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.info-2 {
+  font-family: "font-regular", sans-serif;
+  font-size: 1.5em;
+  color: #1a2258;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.container-4 {
+  grid-column: 1/4;
+  text-align: right;
+}
+
+.btn {
+  background: none;
+  border: none;
+  font-family: "font-demibold", sans-serif;
+  font-size: 1.5em;
+  color: #216bff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.desc {
+  font-family: "font-regular", sans-serif;
+  font-size: 1.25em;
+  font-weight: 400;
+  text-align: justify;
+  color: black;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    width: 250px;
+    height: auto;
+    margin: 5px auto 5px auto;
+    font-size: 6.5px;
+  }
+
+  .App {
+    border-radius: 2.5px;
+  }
+
+  .ribbon {
+    top: 9px;
+    left: 1.5px;
+    font-size: 1em;
+  }
+
+  .App i {
+    top: 5px;
+    left: -5px;
+    width: 90px;
+    height: 15px;
+    border-top-left-radius: 2.5px;
+  }
+
+  .App i::before {
+    top: 15px;
+    width: 5px;
+    height: 5px;
+    border-top-left-radius: 2.5px;
+    border-bottom-left-radius: 2.5px;
+  }
+
+  .App i::after {
+    top: 15px;
+    width: 5px;
+    height: 5px;
+    border-bottom-left-radius: 2.5px;
+  }
+
+  .mainPic {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .mainContent {
+    display: inline-grid;
+    margin: 10px;
+    grid-template-columns: 0.1fr auto 5fr;
+  }
+
+  .icon,
+  .container-1,
+  .container-3 {
+    order: 1;
+    width: 100%;
+  }
+
+  .icon {
+    grid-column: 1/2;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+  }
+
+  .container-1 {
+    grid-column: 2/3;
+  }
+
+  .address {
+    margin-top: 2.5px;
+  }
+
+  .container-3 {
+    grid-column: 1/4;
+  }
+
+  .info-1,
+  .info-2 {
+    margin-top: 2.5px;
+  }
+
+  .container-2 {
+    grid-column: 1/4;
+    order: 2;
+    text-align: left;
+    display: flex;
+  }
+
+  .subprice {
+    margin-top: auto;
+    margin-left: 7.5px;
+  }
+
+  .container-4 {
+    grid-column: 1/4;
+    order: 3;
+    width: 100%;
+    text-align: right;
+  }
+
+  .btn {
+    margin-top: 10px;
+  }
 }
